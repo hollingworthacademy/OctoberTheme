@@ -1,0 +1,5 @@
+description = "Calendar event"
+==
+<dt>{{ event.title }}</dt>
+<dd><span class="text-muted">{{ event.date|date("l jS F") }}</span><br>
+{% if (event.comment) %}{{ event.comment }}{% endif %}</dd>

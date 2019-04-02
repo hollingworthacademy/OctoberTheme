@@ -1,0 +1,15 @@
+description = "Vacancy Template"
+==
+{% put headerContent %}
+<img src="{{ content.extra.image|default('page-headers/vacancy.jpg')|media }}" style="width:100vw;min-width:900px">
+{% endput %}
+
+{{ content.body|raw }}
+
+<div class="text-muted">
+    <p>The school is committed to safeguarding and promoting the welfare of vulnerable adults, children and young people and expects all staff and volunteers to share this commitment. The information requested for applicants is considered to be objectively justified to comply with government guidance on safer recruitment in such areas. Appointment to this post will be subject to a Disclosure and Barring check.</p>
+
+    <p>Hollingworth Academy operates a Smoke Free Policy for all its employees and applies to any building and associated grounds within the immediate vicinity of the building which is wholly owned, leased or operated and occupied by the school.</p>
+</div>
+
+{% partial 'helpers/files' files=content.files title="Application Form and Supporting Documents" %}

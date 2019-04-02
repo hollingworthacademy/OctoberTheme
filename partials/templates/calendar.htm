@@ -1,0 +1,22 @@
+description = "Calendar Template"
+==
+<h2>Autumn Term</h2>
+<dl class="dl-horizontal">
+{% for event in content.extra.autumn %}
+    {% partial 'helpers/event' event=event %}
+{% endfor %}
+</dl>
+
+<h2>Spring Term</h2>
+<dl class="dl-horizontal">
+{% for event in content.extra.spring %}
+    {% partial 'helpers/event' event=event %}
+{% endfor %}
+</dl>
+
+<h2>Summer Term</h2>
+<dl class="dl-horizontal">
+{% for event in content.extra.summer %}
+    {% partial 'helpers/event' event=event %}
+{% endfor %}
+</dl>

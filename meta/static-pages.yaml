@@ -1,0 +1,44 @@
+static-pages:
+    subjects:
+        subjects-computing-and-it-mathematics: {  }
+        subjects-science: {  }
+        test-page: {  }
+        subjects-english: {  }
+        subjects-art-and-design: {  }
+        subjects-business-studies: {  }
+        subjects-design-and-technology: {  }
+        subjects-drama-and-dance: {  }
+        subjects-food-technology: {  }
+        subjects-geography: {  }
+        subjects-history: {  }
+        subjects-media-studies: {  }
+        subjects-modern-foreign-languages: {  }
+        subjects-music: {  }
+        subjects-physical-education: {  }
+        subjects-religious-education: {  }
+        subjects-learning-resource-centre: {  }
+    parents:
+        parents-school-calendar: {  }
+        parents-newsletters: {  }
+        parents-wisepay: {  }
+        parents-bus-timetable: {  }
+        parents-vle: {  }
+        parents-dining: {  }
+        parents-pastoral: {  }
+        parents-uniform: {  }
+    school:
+        school-ethos-and-values: {  }
+        school-staff: {  }
+        school-governors: {  }
+        school-policies: {  }
+        subjects-ofsted: {  }
+    vacancies:
+        vacancies-20190111-hair-and-beauty-tutor: {  }
+        vacancies-20190125-exam-invigilator: {  }
+    community:
+        community-lettings: {  }
+    students:
+        vle: {  }
+        students-exams: {  }
+        students-links: {  }
+        students-ceiag: {  }

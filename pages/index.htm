@@ -1,0 +1,28 @@
+title = "Welcome to Hollingworth Academy"
+url = "/"
+layout = "default"
+description = "Website home page"
+is_hidden = 0
+==
+{% put headerContent %}
+    <video style="width:100vw" muted autoplay><source src="{{ 'homepage/video.mp4'|media }}" type="video/mp4"></video>
+{% endput %}
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="row d-flex align-items-stretch">            
+            {% partial 'promoted-items' %}
+        </div>
+    </div>
+    
+    <div class="col-lg-4">
+        <div class="card shadow">
+            <div class="card-body">
+                <h5 class="card-title">Twitter
+                    <a href="https://twitter.com/HollingworthAc">@HollingworthAc</a></h5>
+                <a class="twitter-timeline" data-theme="light" data-chrome="noborders noheader nofooter" data-link-color="#9f579e" data-tweet-limit="5" href="https://twitter.com/HollingworthAc?ref_src=twsrc%5Etfw">Tweets by HollingworthAc</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </div>
+</div>

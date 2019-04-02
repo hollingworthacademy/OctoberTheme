@@ -1,0 +1,29 @@
+description = "Page header"
+
+[viewBag]
+==
+{% set images = [
+    'headers/image01.jpg',
+    'headers/image02.jpg',
+    'headers/image03.jpg',
+    'headers/image04.jpg',
+    'headers/image05.jpg',
+    'headers/image06.jpg',
+    'headers/image07.jpg',
+    'headers/image08.jpg',
+    'headers/image09.jpg',
+    'headers/image10.jpg',
+    'headers/image11.jpg',
+    'headers/image12.jpg',
+    'headers/image13.jpg',
+] %}
+
+<header id="page-header">
+    <div class="full-width position-relative d-flex justify-content-center align-content-center">
+        <div id="parallax">
+            {% placeholder headerContent default %}
+                <img src="{{ random(images)|media }}" style="width:100vw">
+            {% endplaceholder %}
+        </div>
+    </div>
+</header>

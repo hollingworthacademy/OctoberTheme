@@ -1,0 +1,13 @@
+description = "Article Template"
+==
+{% if content.extra.image %}
+    {% put headerContent %}
+    <img src="{{ content.extra.image|media }}" style="width:100vw;min-width:900px">
+    {% endput %}
+{% endif %}
+
+{{ content.body|raw }}
+
+{% if (content.images.count > 0) %}
+{% partial 'helpers/images' images=content.images %}
+{% endif %}

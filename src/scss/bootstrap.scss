@@ -1,0 +1,27 @@
+$font-family-base: Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+
+$primary: rgb(159,87,158);
+//$enable-rounded: false;
+
+$line-height-base: 1.75;
+
+$headings-margin-bottom: 1rem;
+$h1-font-size: 2rem;
+$h2-font-size: 1.75rem;
+$h3-font-size: 1.75rem;
+$h4-font-size: 1.75rem;
+
+$theme-colors: (
+    "hwt-grey": rgb(65,64,66),
+    "hwt-green": rgb(214,224,61),
+    "hwt-pink": rgb(241,100,119),
+    "hwt-orange": rgb(246,138,51),
+    "hwt-blue": rgb(114,204,210),
+    "hwt-purple": rgb(159, 87, 158),
+    "hwt-header": rgb(126,48,124)
+);
+
+$alert-bg-level: -5;
+
+@import "~bootstrap/scss/bootstrap";
+//@import "bootstrap-select/sass/bootstrap-select";

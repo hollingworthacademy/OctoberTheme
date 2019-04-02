@@ -1,0 +1,83 @@
+#page-footer {
+    font-size: 0.85rem;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+h4 {
+    font-weight: 300;
+}
+
+th {
+    font-weight: 400;
+    font-size: 110%;
+}
+
+td {
+    font-weight: 200;
+}
+
+label {
+    font-weight: 400;
+}
+
+blockquote {
+    // padding-left: 2rem;
+    // border-left: 5px solid theme-color("hwt-purple");
+
+    background-color: theme-color("hwt-purple");
+    color: $light;
+    padding: $spacer $spacer * 2;
+    margin-bottom: $spacer * 3;
+    position: relative;
+}
+
+blockquote::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 1.5rem 0 0 1.5rem;
+    border-color: theme-color("hwt-purple") transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 15%;
+}
+
+.blockquote-footer {
+    font-weight: 200;
+    color: $light;
+    text-align: right;
+}
+
+li {
+    padding-left: 0.5rem;
+}
+
+dt {
+    font-weight: 500;
+}
+
+.is-required label {
+    &::after {
+        content: '*';
+        color: theme-color("danger");
+    }
+}
+
+.navbar hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.5rem;
+}

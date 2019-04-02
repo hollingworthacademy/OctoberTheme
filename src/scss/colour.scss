@@ -1,0 +1,25 @@
+body {
+    color: theme-color("hwt-grey");    
+}
+
+h1 {
+    color: theme-color("hwt-header");
+}
+
+h2 {
+    color: theme-color("hwt-purple");
+}
+
+#main-navigation {
+    background-color: rgba(0,0,0,0.75) !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+dt {
+    color: theme-color("hwt-purple");
+}
+
+.dropdown-item:hover {
+    background-color: theme-color("hwt-purple");
+    color: #ffffff;
+}

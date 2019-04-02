@@ -1,0 +1,15 @@
+title = "Contact Us"
+url = "/contact-us"
+layout = "default"
+is_hidden = 0
+
+[contactForm]
+==
+<div class="row">
+    <div class="col-sm-6">
+        {% component 'contactForm' %}
+    </div>
+    <div class="col-sm-6">
+        {% content 'address' %}
+    </div>
+</div>

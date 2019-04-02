@@ -1,0 +1,94 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.full-width {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+#page-content {
+    flex: 1 0 auto;
+    background-color: #ffffff;
+    padding-top: $spacer * 2;
+    padding-bottom: $spacer * 2;
+}
+
+#page-footer {
+    flex-shrink: 0;    
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+}
+
+#page-header {
+    flex-shrink: 0;
+    min-height: 100px;
+    max-height: 900px;
+    overflow: hidden;
+}
+
+#main-navigation {
+    .dropdown-menu {
+        margin-left: -16px;
+        margin-right: -16px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+
+        br {
+            border: 1px black;
+        }
+    }
+}
+
+dl.dl-horizontal {
+    @include make-row();
+
+    & > dt {
+        text-align: right;
+        @include make-col-ready();
+
+        @include media-breakpoint-down(sm) {
+            @include make-col(5);
+        }
+        @include media-breakpoint-up(md) {
+            @include make-col(4);
+        }
+        @include media-breakpoint-up(lg) {
+            @include make-col(3);
+        }
+    }
+
+    & > dd {
+        @include make-col-ready();
+
+        @include media-breakpoint-down(sm) {
+            @include make-col(7);
+        }
+        @include media-breakpoint-up(md) {
+            @include make-col(8);
+        }
+        @include media-breakpoint-up(lg) {
+            @include make-col(9);
+        }
+    }
+}
+
+#main-navigation {
+    max-height: 100vh;
+
+    @include media-breakpoint-down(md) {
+        #menu-items.show {
+            height: calc(100vh - 47px);
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        div.dropdown-menu {
+            margin-left: -24px;
+            border-radius: 0px;
+            box-shadow: none;
+        }
+    }
+}

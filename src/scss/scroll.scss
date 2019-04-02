@@ -1,0 +1,7 @@
+#main-navigation {
+    transition: all 0.5s;
+
+    &.scrollUp {
+        transform: translateY(-100%);
+    }
+}

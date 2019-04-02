@@ -1,0 +1,9 @@
+==
+{% if files.count > 0 %}
+<h2>{{ title|default('Downloads') }}</h2>
+<ul class="list-unstyled">
+    {% for file in files %}
+    <li><a href="{{ file.path }}" download="{{ file.file_name }}">{{ file.title|default(file.file_name) }} ({{ file.size }})</a></li>
+    {% endfor %}
+</ul>
+{% endif %}

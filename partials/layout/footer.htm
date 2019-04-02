@@ -1,0 +1,20 @@
+description = "Page footer"
+
+[viewBag]
+==
+<footer class="bg-dark text-light" id="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-4">
+                {% content 'address' %}
+            </div>
+            
+            <div class="col-lg-6 col-sm-4">
+            </div>
+            
+            <div class="col-lg-3 col-sm-4">
+                {% content 'academy-trust' %}
+            </div>
+        </div>
+    </div>
+</footer>
